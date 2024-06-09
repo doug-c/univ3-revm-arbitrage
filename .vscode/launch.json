@@ -1,0 +1,304 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'eth_call_one'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=eth_call_one",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "eth_call_one",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'eth_call_one'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=eth_call_one",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "eth_call_one",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'eth_call'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=eth_call",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "eth_call",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'eth_call'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=eth_call",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "eth_call",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'anvil'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=anvil",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "anvil",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'anvil'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=anvil",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "anvil",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'revm'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=revm",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'revm'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=revm",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'revm_cached'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=revm_cached",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_cached",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'revm_cached'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=revm_cached",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_cached",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'revm_quoter'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=revm_quoter",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_quoter",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'revm_quoter'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=revm_quoter",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_quoter",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'revm_validate'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=revm_validate",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_validate",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'revm_validate'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=revm_validate",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_validate",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'revm_arbitrage'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=revm_arbitrage",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_arbitrage",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'revm_arbitrage'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=revm_arbitrage",
+                    "--package=univ3-revm-arbitrage"
+                ],
+                "filter": {
+                    "name": "revm_arbitrage",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -4,6 +4,7 @@ use anyhow::Result;
 use revm::primitives::U256;
 use std::ops::Div;
 use std::sync::Arc;
+use dotenv::dotenv;
 
 use crate::source::{
     decode_quote_response, init_cache_db, me, measure_end, measure_start, official_quoter_addr,
@@ -12,6 +13,7 @@ use crate::source::{
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    dotenv().ok();
     env_logger::init();
 
     let provider = ProviderBuilder::new().on_http(std::env::var("ETH_RPC_URL").unwrap().parse()?);

@@ -5,6 +5,10 @@ publish = false
 version = "0.0.0"
 
 [dependencies]
+
+# misc
+dotenv = "0.15.0"
+
 alloy-provider = {git = "https://github.com/alloy-rs/alloy.git", rev = "44b8a6d", default-features = false, features = [
   "reqwest",
 ]}
