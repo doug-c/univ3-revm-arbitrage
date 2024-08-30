@@ -6,6 +6,7 @@ use alloy_node_bindings::Anvil;
 use anyhow::Result;
 use revm::primitives::U256;
 use std::ops::Div;
+use dotenv::dotenv;
 
 use crate::source::{
     build_tx, decode_quote_response, me, measure_end, measure_start, official_quoter_addr,
@@ -15,6 +16,7 @@ use crate::source::{
 #[tokio::main]
 async fn main() -> Result<()> {
     env_logger::init();
+    dotenv().ok();
 
     let rpc_url: Url = std::env::var("ETH_RPC_URL").unwrap().parse()?;
 

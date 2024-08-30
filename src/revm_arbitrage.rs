@@ -4,6 +4,7 @@ use anyhow::Result;
 use revm::primitives::{Bytecode, Bytes, U256};
 use std::sync::Arc;
 use std::{ops::Div, str::FromStr};
+use dotenv::dotenv;
 
 use crate::source::{
     custom_quoter_addr, decode_get_amount_out_response, get_amount_out_calldata, init_account,
@@ -14,6 +15,7 @@ use crate::source::{
 #[tokio::main]
 async fn main() -> Result<()> {
     env_logger::init();
+    dotenv().ok();
 
     let provider = ProviderBuilder::new().on_http(std::env::var("ETH_RPC_URL").unwrap().parse()?);
     let provider = Arc::new(provider);

@@ -16,7 +16,7 @@ use crate::source::{
 #[tokio::main]
 async fn main() -> Result<()> {
     dotenv().ok();
-    env_logger::init();
+    env_logger::init(); 
 
     let provider = ProviderBuilder::new().on_http(std::env::var("ETH_RPC_URL").unwrap().parse()?);
     let provider = Arc::new(provider);

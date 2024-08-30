@@ -37,7 +37,7 @@ async fn main() -> Result<()> {
         let response = revm_call(me(), official_quoter_addr(), calldata, &mut cache_db)?;
 
         let amount_out = decode_quote_response(response)?;
-        if index % 20 == 0 {
+        if index % 10 == 0 {
             println!("{} WETH -> USDC {}", volume, amount_out);
         }
     }
